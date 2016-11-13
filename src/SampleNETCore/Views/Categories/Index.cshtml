@@ -1,0 +1,21 @@
+﻿@model IEnumerable<SampleNETCore.Models.Category>
+
+@{
+    ViewData["Title"] = "Category Page";
+}
+
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+
+    @foreach (var data in Model)
+    {
+        <tr>
+            <td>@data.CategoryID</td>
+            <td>@data.CategoryName</td>
+        </tr>
+    }
+</table>
+
