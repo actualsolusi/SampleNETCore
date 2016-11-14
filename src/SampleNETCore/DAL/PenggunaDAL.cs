@@ -11,8 +11,15 @@ using SampleNETCore.Models;
 
 namespace SampleNETCore.DAL
 {
+    //coba contoh sql injection
     public class PenggunaDAL
     {
-       
+        public void Registrasi(Pengguna pengguna)
+        {
+            using (SqlConnection conn = new SqlConnection(ConnectionHelper.GetConnStr()))
+            {
+
+            }
+        }
     }
 }
